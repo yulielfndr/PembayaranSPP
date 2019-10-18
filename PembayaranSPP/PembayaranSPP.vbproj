@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DD8E2228-3BFF-4A4E-AACE-07F045C2B876}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>TugasProyek.My.MyApplication</StartupObject>
+    <RootNamespace>TugasProyek</RootNamespace>
+    <AssemblyName>TugasProyek</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>TugasProyek.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>TugasProyek.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controller\ClsCtlAngkatan.vb" />
+    <Compile Include="Controller\ClsCtlKelas.vb" />
+    <Compile Include="Controller\ClsCtlPembayaran.vb" />
+    <Compile Include="Controller\ClsCtlPetugas.vb" />
+    <Compile Include="Controller\ClsCtlSiswa.vb" />
+    <Compile Include="Controller\InfProses.vb" />
+    <Compile Include="Model\ClsEntAngkatan.vb" />
+    <Compile Include="Model\ClsEntKelas.vb" />
+    <Compile Include="Model\ClsEntPembayaran.vb" />
+    <Compile Include="Model\ClsEntPetugas.vb" />
+    <Compile Include="Model\ClsEntSiswa.vb" />
+    <Compile Include="Modul\ModKoneksiDB.vb" />
+    <Compile Include="Modul\ModObjekdanFungsi.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="View\FormCariSIswa.Designer.vb">
+      <DependentUpon>FormCariSIswa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormCariSIswa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormDashboard.Designer.vb">
+      <DependentUpon>FormDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormDashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormInputAngkatan.Designer.vb">
+      <DependentUpon>FormInputAngkatan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormInputAngkatan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormInputKelas.Designer.vb">
+      <DependentUpon>FormInputKelas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormInputKelas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormDataSiswa.Designer.vb">
+      <DependentUpon>FormDataSiswa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormDataSiswa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormInputSiswa.Designer.vb">
+      <DependentUpon>FormInputSiswa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormInputSiswa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormLogin.Designer.vb">
+      <DependentUpon>FormLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormPembayaran.Designer.vb">
+      <DependentUpon>FormPembayaran.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormPembayaran.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormPilihJurusan.Designer.vb">
+      <DependentUpon>FormPilihJurusan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormPilihJurusan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormSMSKonfirmasi.Designer.vb">
+      <DependentUpon>FormSMSKonfirmasi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormSMSKonfirmasi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormCariSIswa.resx">
+      <DependentUpon>FormCariSIswa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormDashboard.resx">
+      <DependentUpon>FormDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormInputAngkatan.resx">
+      <DependentUpon>FormInputAngkatan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormInputKelas.resx">
+      <DependentUpon>FormInputKelas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormDataSiswa.resx">
+      <DependentUpon>FormDataSiswa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormInputSiswa.resx">
+      <DependentUpon>FormInputSiswa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormLogin.resx">
+      <DependentUpon>FormLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormPembayaran.resx">
+      <DependentUpon>FormPembayaran.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormPilihJurusan.resx">
+      <DependentUpon>FormPilihJurusan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormSMSKonfirmasi.resx">
+      <DependentUpon>FormSMSKonfirmasi.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormLogin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormPilihKelas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDashboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnMasuk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dashboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Siswa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pembayaran.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SMS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Akun.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Keluar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormPilihJurusan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dashboard1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Siswa1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pembayaran1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ipa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ips.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ips1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnCari.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDataKelas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tambah.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormPilihKelas1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormPilihKelasAngkatan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormPilihJurusan1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnTambahKelas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnTambahAngkatan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\headerSiswa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormKelas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnTambah.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnUbah.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnHapus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnSimpan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnBatal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormInputAngkatan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormPilihJurusan2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\X_Ipa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\X_Ips.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\XI_Ipa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\XI_Ips.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\XII_Ipa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\XII_Ips.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDataSiswa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDataSiswa1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tutup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDataSiswa2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDataSiswaT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormInputDataSiswa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnSave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnCancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormInputDataSiswa1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormPembayaran.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-listing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\batal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hapuss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\savee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tambahh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ubahh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormCari.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormCari1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormCari2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormPembayaran1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormPembayaran2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pembayarann.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormSMSKonfirmasi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnKirim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormPembayaran11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnkonfir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormInputDataSiswa2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
